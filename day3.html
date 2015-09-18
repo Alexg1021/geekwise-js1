@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-9">
                 <div class="point">
-                    Write a small js program that will: (chrome snippet is fine)
+                    Write a small JS program (chrome snippet is fine) that will: 
 
                     <ul class="list">
                         <li>Prompt for two numbers</li>
@@ -73,13 +73,13 @@
                         <li><code>switch</code></li>
                         <li>ternary</li>
                     </ul>
-                    In almost all cases, the control flow will evaluate some condition, and react accordingly.  This
-                    enables us to run some code, while skipping other parts.
+                    In almost all cases, the control flow will evaluate some condition and react accordingly.  This
+                    enables us to run some code while skipping other parts.
                 </div>
-                <div class="point">The most basic form of control flow are <code>if</code> / <code>else</code> statements.</div>
+                <div class="point">The most basic form of control flow is <code>if</code> / <code>else</code> statements.</div>
 <pre>
     <code class="language-javascript">
-//simple if statement
+//Simple if statement
 if (true) {
 
     console.log("yup");
@@ -90,7 +90,7 @@ if (true) {
                 <div class="point">
                     <div class="excercise">
                         Try it: Create a program that prompts the user for their age. In an if statement check 
-                        if the user is yonger than 18. If so then alert the user "You're a youngun'!"
+                        if the user is younger than 18. If so, alert the user, "You're a youngun!"
                     </div>
                 </div>
 
@@ -140,8 +140,7 @@ if (condition1) {
 
                 <div class="point">
                     With <code>if</code> statements, it's possible to evaluate multiple conditions, and we use logical
-                    operators to do so.  This lets us say, "If this <code>AND</code> that are true, then run this code."
-                    <ul class="list">
+                    operators to do so.  This lets us say, "If this <code>AND</code> that are true, then run this code."<ul class="list">
                         <li><code>&&</code> the and operator</li>
                         <li><code>||</code> the or operator</li>
                     </ul>
@@ -151,14 +150,14 @@ if (condition1) {
 var a = true;
 var b = false;
 
-//if both a AND b are true...
+// If both a AND b are true...
 if (a && b) {
     console.log("both a and b are true");
 } else {
     console.log("one of a or b are false");
 }
 
-//if a OR b is true
+//If a OR b is true
 if (a || b) {
     console.log("one of a or b are true");
 }
@@ -166,7 +165,7 @@ if (a || b) {
 
                 <div class="point">
                     <div class="excercise">
-                        Try it: Continuing on with our exercise, alter the code to now ask for both the users age and gender. 
+                        Try it: Continuing on with our exercise, alter the code to now ask for both the user's age and gender. 
                         Using the two inputs set up an if else if ladder that will alert something different for each combination 
                         of variables. 
                     </div>
@@ -203,7 +202,7 @@ default:
                 </div>
 
                 <div class="point">
-                    Careful with Switch statements however, they can lead to some unwanted results if you forget the
+                    Careful with Switch statements however; they can lead to some unwanted results if you forget the
                     <code>break</code> keyword called "fall-through" or "pass-through". What happens when you run the
                     switch statement and omit the break in the "foo" case?
                 </div>
@@ -223,7 +222,7 @@ default:
 </code></pre>
 
                 <div class="point">
-                    Ternary operators are a short hand if else type of control flow.
+                    Ternary operators are a shorthand if else type of control flow.
                 </div>
                 <div class="point">
                     They use the <code>?</code> and the <code>:</code> as the syntax.
@@ -250,7 +249,7 @@ var hasPets = dogs ? true : cats ? true : fish ? true : false; //wat?
 
                 <div class="point">Just because you can do something, doesn't mean you should...
                 <br>
-                Just because you have a hammer, not everything is a nail.</div>
+                Not everything is a nail just because you're holding a hammer.</div>
 
             </div>
         </div>
@@ -259,15 +258,15 @@ var hasPets = dogs ? true : cats ? true : fish ? true : false; //wat?
             <div class="col-md-3"><h2 class="text-right">Operators & Conditions in Practice</h2></div>
             <div class="col-md-9">
                 <div class="point">
-                    <h4>Who's practiced more?</h4>
+                    <h4>Who's Practiced More?</h4>
                     <div class="problem">
-                        Jules has been writing javascript for 4 years.  She spends 4 hours every day writing javascript.
-                        Hallie has been writing javascript for 6 years, but only spends about 2.5 hours a day coding.
+                        Jules has been writing Javascript for 4 years.  She spends 4 hours every day writing Javascript.
+                        Hallie has been writing Javascript for 6 years, but only spends about 2.5 hours a day coding.
                     </div>
                     <br>
                     <div class="problem">
-                        Write some code that will determine the total number of hours each have spent coding.  Then using
-                        some control flow log the name (Jules or Hallie) that has had the most time at the keyboard.
+                        Write some code that will determine the total number of hours each have spent coding.  Using
+                        control flow log the name (Jules or Hallie) that has had the most time at the keyboard.
                     </div>
                 </div>
             </div>

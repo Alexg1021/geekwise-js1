@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,10 +30,10 @@
             <ul>
                 <li>Review Take Home Assignment</li>
                 <li>Skill Builder</li>
-                <li>functions</li>
-                <li>creating functions</li>
-                <li>Edge cases</li>
-                <li>Take home assignment</li>
+                <li>Functions</li>
+                <li>Creating Functions</li>
+                <li>Edge Cases</li>
+                <li>Take Home Assignment</li>
             </ul>
         </div>
     </div>
@@ -44,16 +44,16 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                 Write a js program that will:
+                 Write a JS program that will:
 
                 <ul class="list">
-                    <li>Create and array containing 5 of your favorite movies.</li>
-                    <li>Create a second array that holds the second and third movies in the previous array.</li>
-                    <li>Remove the fourth item and replace it with any other movie you would like.</li>
-                    <li>Prompt the user for a movie title.</li>
-                    <li>Check if the title is already in the array.</li>
-                    <li>If it is not add the movie to the array.</li>
-                    <li>Log the items in the array.</li>
+                    <li>Create an array containing 5 of your favorite movies</li>
+                    <li>Create a second array that holds the second and third movies in the previous array</li>
+                    <li>Remove the fourth item and replace it with any other movie you would like</li>
+                    <li>Prompt the user for a movie title</li>
+                    <li>Check if the title is already in the array</li>
+                    <li>If it is not add the movie to the array</li>
+                    <li>Log the items in the array</li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
 
 <div class="row">
         <div class="col-md-3">
-            <h2 class="text-right">functions</h2>
+            <h2 class="text-right">Functions</h2>
         </div>
         <div class="col-md-9">
             <div class="point">
@@ -70,8 +70,7 @@
             </div>
 
             <div class="point">
-                Lets define a javascript function as: <strong>a set of statements that performs a task or calculates a
-                                                              value</strong>
+                Let's define a Javascript function as: <strong>a set of statements that performs a task or calculates a value</strong>.
             </div>
 
             <div class="point">
@@ -83,7 +82,7 @@
             </div>
 
             <div class="point">
-                All javascript datatypes have different functions that work on them.  For example:
+                All Javascript datatypes have different functions that work on them.  For example:
 
                 <ul class="list">
                     <li>Arrays have <code>push</code>, <code>pop</code>, etc...</li>
@@ -91,7 +90,7 @@
                     <li>Objects have <code>hasOwnProperty</code></li>
                 </ul>
 
-                These functions are all built into each datatypes.
+                These functions are all built into each datatype.
             </div>
 
 <pre>
@@ -108,11 +107,11 @@ console.log(moviePieces.join(" "));
 </pre>
 
             <div class="point">
-                Ok, so we know that javascript has built in functions that perform tasks on certain datatypes, but wouldn't
+                OK, so we know that Javascript has built-in functions that perform tasks on certain datatypes; wouldn't
                 it be nice if we could write our own functions?
             </div>
 
-            <h3>Creating your first function</h3>
+            <h3>Creating Your First Function</h3>
 
             <div class="point">
                 To define a function requires four things:
@@ -138,31 +137,31 @@ function helloWorld() {
 </pre>
 
             <div class="point">
-                Lets pick that apart line by line:
+                Let's pick that apart line by line:
 
                 <ol class="list">
                     <li><code>function helloWorld() {</code> - the <code>function</code> keyword followed by an arbitrary
                     function name.  In this case <strong>helloWorld</strong>.  The function does not take any arguments
                     so we just have an empty set of parentheses.  Then we have an opening curly bracket to start our
-                    javascript statements.</li>
+                    Javascript statements.</li>
                     <li><code>console.log("hello world");</code> - the functions body.  In this case, we are simply logging
                     "hello world" to the console.</li>
-                    <li><code>}</code> - closing curly brace, ends our function definition</li>
+                    <li><code>}</code> - closing curly brace ends our function definition</li>
                 </ol>
             </div>
 
-            <div class="point">Great, run that in the console.  What happens?</div>
+            <div class="point">Great! Run that in the console.  What happens?</div>
 
-            <div class="point">Javascript functions need to be "called" or "invoked".  Simply writing the function
-            only makes the javascript interpreter aware that it exists, it does not call it right away.</div>
+            <div class="point">Javascript functions need to be "called" or "invoked."  Simply writing the function
+            only makes the Javascript interpreter aware that it exists, it does not call it right away.</div>
 
-            <div class="point">You call a function by using it's name, followed by a set of parenthesis.  Recall other
-            functions we've used, the functions are always called with the parentheses.  <code>console.log(...)</code>
+            <div class="point">You call a function by using its name, followed by a set of parenthesis.  Recall other
+            functions we've used; the functions are always called with the parentheses.  <code>console.log(...)</code>
             <code>a.push(...)</code>, etc...</div>
 
-            <div class="point">So, lets call our function
+            <div class="point">Let's call our function
                 <div class="excercise">
-                    Try it: alter your code to call the function
+                    Try it: Alter your code to call the function
                 </div>
             </div>
 
@@ -176,12 +175,12 @@ helloWorld();
     </code>
 </pre>
 
-            <div class="point">Now you should see your console.log appear.  So we called the function, and javascript
+            <div class="point">Now you should see your console.log appear.  We called the function and Javascript
             executed the code found inside it.</div>
 
             <div class="point">
-                Now, lets create a function that takes 1 argument, and log that to the console instead of the hard coded
-                "hello world" string.  While were at it lets rename it to something more appropriate, like <code>log</code>.
+                Now let's create a function that takes 1 argument, and log that to the console instead of the hard-coded
+                "hello world" string.  While we're at it let's rename it to something more appropriate, like <code>log</code>.
 
                 <div class="excercise">
                     Try it: Create a function called log that accepts one argument, and logs it to the console.
@@ -199,26 +198,26 @@ log("the fox jumps over the lazy dog");
 </pre>
 
             <div class="point">
-                Notice, we do not use the <code>var</code> keyword when working with our function arguments.  The arguments
+                Notice we do not use the <code>var</code> keyword when working with our function arguments.  The arguments
                 are scoped to that function (more on this later).
             </div>
 
             <div class="point">
                 <div class="excercise">
-                    Try it: Call your <code>log</code> function without passing any arguments, what gets logged to the
+                    Try it: Call your <code>log</code> function without passing any arguments. What gets logged to the
                     console?
                 </div>
             </div>
 
-            <div class="point">Great, now we're getting somewhere, we can define our own functions that accept arguments
+            <div class="point">Great! Now we're getting somewhere; we can define our own functions that accept arguments
             and do something with them.  It's also worth pointing out that functions can also call other functions.</div>
 
             <div class="point">
-                Lets try something a little more complicated, but more useful.  It would be really nice if we had a way
-                to capitalize a string, for proper names, etc...  Maybe js provides a nice way to do this:
+                Let's try something a little more complicated but more useful.  It would be really nice if we had a way
+                to capitalize a string, for proper names, etc...  Maybe JS provides a nice way to do this:
 
                 <div class="excercise">
-                    Try it: Lets check and see if js provides a string capitalize function...
+                    Try it: Let's check and see if JS provides a string capitalize function...
                 </div>
             </div>
 
@@ -234,19 +233,19 @@ console.log(capped);
 </pre>
 
             <div class="point">
-                Lets look a little closer at that error... <code>undefined is not a function</code>.  In our example,
+                Let's look a little closer at that error... <code>undefined is not a function</code>.  In our example,
                 we are calling two functions, <code>name.capitalize()</code> and <code>console.log()</code>.  Which one
                 is likely giving us the problem?
             </div>
 
             <div class="point">
-                Since we know <code>console.log()</code> is a real function, it's likely that javascript is telling us
-                that <code>name.capitalize</code> is undefiend, and thus when we try and call it, it's not a function.
+                Since we know <code>console.log()</code> is a real function, it's likely that Javascript is telling us
+                that <code>name.capitalize</code> is undefiend, and thus when we try to call it, it's not a function.
             </div>
 
             <div class="point">
-                While js does not provide a way of capitalizing the first letter of a string, it does provide a way to
-                upper case an entire string. It looks like <code>"adam".toUpperCase()</code>.
+                While JS does not provide a way of capitalizing the first letter of a string, it does provide a way to
+                uppercase an entire string. It looks like <code>"adam".toUpperCase()</code>.
 
                 <div class="excercise">
                     Try it: Create a string (variable or directly inline) and use the toUpperCase function on it.  What
@@ -262,23 +261,22 @@ console.log("adam".toUpperCase());
 
             <div class="point">
                 The result should be an entirely uppercase string.  So how can we use this to our advantage if we
-                wanted to write a function that will capitalize just the first letter?
+                want to write a function that will capitalize just the first letter?
             </div>
 
             <div class="point">
-                Also, we want this function to accept a string and capitalize it, we need to be able to get that value
-                back out of the function, this is where the <code>return</code> keyword is used.  <code>return</code> will
-                return the specified value out of the function so you can use it else where.
+                We also want this function to accept a string and capitalize it. We need to be able to get that value
+                back out of the function; this is where the <code>return</code> keyword is used.  <code>Return</code> will return the specified value out of the function so you can use it elsewhere.
 
                 <div class="excercise">
-                    Try it: Lets discuss how you might tackle creating a capitalized string using methods we've discussed
+                    Try it: Let's discuss how you might tackle creating a capitalized string using methods we've discussed
                     in the last few classes.  Hint: <code>toUpperCase</code>, string indexes, and <code>slice</code>.
                 </div>
 
                 <div class="sidenote">
-                    In javascript <strong>strings</strong> are <strong>not mutable</strong>.  This means that when you
+                    In Javascript <strong>strings</strong> are <strong>not mutable</strong>.  This means that when you
                     take any action on a string, you're actually creating a new string.  So it's important to realize that
-                    since I can't actually change the string "adam" into "Adam", we can fake it by creating another string.
+                    since I can't actually change the string "adam" into "Adam", I can fake it by creating another string.
                 </div>
             </div>
 
@@ -293,7 +291,7 @@ function capitalize(str) {
             <h3>Handling Edge Cases</h3>
 
             <div class="point">
-                When writing functions (or any js program, really), it's very important to consider edge cases.  As a
+                When writing functions (or any JS program, really), it's very important to consider edge cases.  As a
                 developer, it's your job to anticipate odd ways your function might be used and make sure it handles
                 those cases.  What happens if you call your capitalize function on an empty string?  How can we fix that?
                 What other edge cases might be useful to consider?
@@ -301,7 +299,7 @@ function capitalize(str) {
 
 <pre>
     <code class="language-javascript">
-//this handles our case when no string is passed in (str is "falsy")
+//This handles our case when no string is passed in (str is "falsy")
 function capitalize(str) {
     if (!str) {
         return "";
@@ -313,7 +311,7 @@ function capitalize(str) {
 </pre>
 
             <div class="point">
-                Notice the function now contains two return points, one for the case where we don't have a string, and
+                Notice the function now contains two return points; one for the case where we don't have a string, and
                 one where we do.  It's also important to understand that a function will stop executing any code following
                 a return statement, so if no string is passed in, nothing past <code>return "";</code> will be executed.
             </div>
@@ -340,9 +338,9 @@ console.log(typeof 3);
 </pre>
 
             <div class="point">
-                So, how can we use typeof to ensure the argument is a string?
+                How can we use typeof to ensure the argument is a string?
                 <div class="excercise">
-                    Try it: alter your original capitalize function to ensure that a value is passed in, and that it's
+                    Try it: Alter your original capitalize function to ensure that a value is passed in and that it's
                     a string.
                 </div>
             </div>
@@ -375,19 +373,19 @@ function capitalize(str) {
             Create a program that will:
 
             <ul class="list">
-                <li>Create a function that will, when called, prompt the user for what they would like a reminder "to do".</li>
-                <li>Store the "to do" itme in an array of "to do" items.</li>
+                <li>When called, prompt the user for what they would like a reminder "to do".</li>
+                <li>Store the "to do" item in an array of "to do" items.</li>
                 <li>Employ edge casing tequniques to make sure the user has input something.</li>
-                <li>If the user has not input anything, alert them that they need to input a valid "to do" item and terminate the program or call the function again</li>
-                <li>If the user has input a valid "to do" item, log or alert the usre of their "to do" item.</li>
-                <li>In your html, create a button the calles the function "onclick"</li>
+                <li>If the user has not input anything, alert them that they need to input a valid "to do" item and terminate the program or call the function again.</li>
+                <li>If the user has input a valid "to do" item, log or alert the user of their "to do" item.</li>
+                <li>In your HTML, create a button the calls the function "onclick."</li>
             </ul>
         </div>
 
-        <h3>Challange</h3>
+        <h3>Challenge</h3>
 
         <div class="point">
-            In stead of logging or alerting the to do item, create an empty ul in your html and make your to do items appear in them as li's.
+            Instead of logging or alerting the to do item, create an empty ul in your HTML and make your to do items appear in them as li's.
         </div>
     </div>
 

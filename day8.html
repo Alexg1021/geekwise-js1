@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -32,7 +32,7 @@
                         <li>Skill Builder</li>
                         <li>Github</li>
                         <li>The DOM</li>
-                        <li>Selecting Elements on a page</li>
+                        <li>Selecting Elements on a Page</li>
                         <li>Take Home Assignment</li>
                     </ul>
                 </div>
@@ -47,12 +47,12 @@
                     <div class="point">
                         <ul class="list">
                             <li>Navigate to <a href="https://github.com/">Github</a>. Once you are there either create an account or sign into your account. If you do have an account you have already completed the first step</li>
-                            <li>Create a "Repo". We will use this in a bit.</li>
-                            <li>Open sublime or your favorite text editor and create an empty <span class="success">index.html</span> file as well as a <span class="success">style.css</span> and a <span class="success">app.js</span></li>
-                            <li>Make sure you link everything in the index.html file</li>
-                            <li>Use Bootstrap's CDN (If you don't know what that is, Google it! It will be one of the first thing that pops up!)</li>
-                            <li>Using some of the things we learned from the last lesson create an empty array within the javascript file.</li>
-                            <li>Prompt the user for a string, and "push" it onto the array from the above bullet point.</li>
+                            <li>Create a "Repo." We will use this in a bit</li>
+                            <li>Open Sublime or your favorite text editor and create an empty <span class="success">index.html</span> file as well as a <span class="success">style.css</span> and a <span class="success">app.js</span></li>
+                            <li>Make sure you link everything in the index.html file correctly</li>
+                            <li>Use Bootstrap's CDN (If you don't know what that is, Google it! It will be one of the first things that pops up!)</li>
+                            <li>Using some of the things we learned from the last lesson create an empty array within the Javascript file</li>
+                            <li>Prompt the user for a string, and "push" it onto the array from the above bullet point</li>
                             <li>When you have compeleted this you have completed the skill builder! And you are ready for git!</li>
                         </ul>
                     </div>
@@ -65,21 +65,20 @@
                 </div>
                 <div class="col-md-9">
                     <div class="point">
-                        Github is an extremely useful version control system. It is very useful as remote storage of your projects
-                        and also as a tool for working on a project as a team. We use Github regularly to share code and collaborate
+                        Github is an extremely useful version control system. It functions as a storage space for your projects and also as a tool for working on a project with a team. We use Github regularly to share code and collaborate
                         on projects.
                     </div>
 
                     <div class="point">
-                        Go through these links and familiarize yourself with the command line and git
+                        Go through these links and familiarize yourself with the command line and git:
                         <ul>
-                            <li><a href="https://try.github.io/levels/1/challenges/1">Click this link and do this now, it shouldn't take longer than 15-20 mins.</a></li>
-                            <li><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>
+                            <li><a href="https://try.github.io/levels/1/challenges/1">Click this link and do this now; it shouldn't take longer than 15-20 mins.</a></li>
+                            <li><a href="http://rogerdudler.github.io/git-guide/">Git - The Simple Guide</a></li>
                             <li>
                                 <a href="http://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101">Command Line 101</a>
                             </li>
                             <li><a href="https://help.github.com/articles/set-up-git/">Set Up Git</a></li>
-                            <li><a href="https://help.github.com/articles/generating-ssh-keys/">Generating SSH keys</a></li>
+                            <li><a href="https://help.github.com/articles/generating-ssh-keys/">Generating SSH Keys</a></li>
                         </ul>
                     </div>
 
@@ -101,7 +100,7 @@
                             What is the DOM?
                         </div>
                         <div class="point">
-                            The Document Object Model (DOM) is a programming interface for HTML.  It's what allows javascript to
+                            The Document Object Model (DOM) is a programming interface for HTML.  It's what allows Javascript to
                             manipulate an HTML page after it's been loaded in the browser.
                         </div>
                         <div class="point">
@@ -125,7 +124,7 @@
 
                         <div class="point">
                             In order to begin manipulating elements on the page, we need to know how to "reference" those items.
-                            For example, if we want to change our pages &lt;h1&gt; tag, we need to be able to tell javascript
+                            For example, if we want to change our page's &lt;h1&gt; tag, we need to be able to tell Javascript
                             which node on the page we want to change.
                         </div>
                     </div>
@@ -134,18 +133,18 @@
                 <div class="row">
                     <div class="col-md-3">
                         <h3>
-                            Selecting Elements on a page
+                            Selecting Elements on a Page
                         </h3>
                     </div>
 
                     <div class="col-md-9">
                         <div class="point">
-                            So, using the example above, lets setup an HTML page with an h1 tag in it.
+                            So, using the example above, let's setup an HTML page with an h1 tag in it.
                         </div>
 
 <pre>
     <code class="language-markup">
-        &lt;!doctype html&gt;
+        &lt;!doctype HTML&gt;
         &lt;html lang="en"&gt;
         &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
@@ -161,12 +160,12 @@
 </pre>
 
                         <div class="point">
-                            The DOM gives us some nice ways to select elements on a page for maniuplating.  The first method we'll discuss
+                            The DOM gives us some nice ways to select elements on a page for manipulating.  The first method we'll discuss
                             is called <code>document.getElementById()</code>.
                         </div>
 
                         <div class="point">
-                            Lets select the h1 tag using the <code>getElementById</code> function.  It takes as an <code>argument</code>
+                            Let's select the h1 tag using the <code>getElementById</code> function.  It takes as an <code>argument</code>
                             the id of the element you want to select, <code>myHdr</code> in this case.
                         </div>
 
@@ -178,7 +177,7 @@
 </pre>
 
                         <div class="point">
-                            Run that page in your browser, you should see the element logged to your console.
+                            Run that page in your browser. You should see the element logged to your console.
                         </div>
 
                         <div class="point">
@@ -189,8 +188,8 @@
                         <h3>Element Attributes</h3>
 
                         <div class="point">
-                            You can now see that a "node" or "element" has an underlying javascript object that provides all kinds of
-                            methods for you to interact with it.  Lets look at some attributes.  First, modify your <code>h1</code>
+                            You can now see that a "node" or "element" has an underlying Javascript object that provides all kinds of
+                            methods for you to interact with it.  Let's look at some attributes.  First, modify your <code>h1</code>
                             tag to include a <code>class="hdr"</code> attribute.
                         </div>
 
@@ -201,7 +200,7 @@
 </pre>
 
                         <div class="point">
-                            Now lets use the <code>h1.hasAttribute()</code> function to see if the given dom node has a specific
+                            Now let's use the <code>h1.hasAttribute()</code> function to see if the given DOM node has a specific
                             attribute.
                         </div>
 
@@ -213,14 +212,14 @@
 </pre>
 
                         <div class="point">
-                            Run the code above, it returns <code>boolean</code> so if the attribute exists, it will return <code>true</code>
+                            Run the code above. It returns <code>boolean</code>; so if the attribute exists, it will return <code>true</code>,
                             otherwise it will return <code>false</code>.
                         </div>
 
                         <div class="point">
-                            Cool, so we can see if an element has a specific attribute, what about adding new attributes?  Easily done.
-                            Using the same DOM node we can call the <code>h1.setAttribute()</code>.  It takes two arguments in it's
-                            signature, the property name to set, and it's value.  Lets add a <code>rel</code> attribute.
+                            Cool! So we can see if an element has a specific attribute. What about adding new attributes?  Easily done.
+                            Using the same DOM node we can call the <code>h1.setAttribute()</code>.  It takes two arguments in its
+                            signature; the property name to set, and its value.  Let's add a <code>rel</code> attribute.
                         </div>
 
 <pre>
@@ -231,12 +230,12 @@
 </pre>
 
                         <div class="point">
-                            Awesome, so now we can add and look at attributes on a dom node, I guess the only thing left is to be
+                            Awesome! Now we can add and look at attributes on a DOM node. I guess the only thing left is to be
                             able to remove them.  This is done with the <code>removeAttribute</code> function.
                         </div>
 
                         <div class="point">
-                            Lets remove the rel attribute now.
+                            Let's remove the rel attribute now.
                         </div>
 
 <pre>
@@ -246,20 +245,20 @@
 </pre>
 
                         <div class="point">
-                            These functions become really handy so practice them!  You can now manipulate ANY webpage you go to that
-                            uses id's on their elements using your console!
+                            These functions become really handy, so practice them!  You can now manipulate ANY webpage you go to that
+                            utilizes ids on their elements using your console!
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>Other Ways of Selecting DOM nodes</h3>
+                        <h3>Other Ways of Selecting DOM Nodes</h3>
                     </div>
 
                     <div class="col-md-9">
                         <div class="point">
-                            Lets add some markup to our html page.
+                            Let's add some markup to our HTML page.
                         </div>
 
 <pre>
@@ -275,7 +274,7 @@
                         <div class="point">
                             There are alternatives to <code>getElementById</code> for cases where an item might not have an id,
                             or you want to use an alternative syntax.  The first is <code>document.querySelector</code>.
-                            Lets try that now...
+                            Let's try that now:
                         </div>
 
 <pre>
@@ -291,9 +290,9 @@
                         </div>
 
                         <div class="point">
-                            Lets pick the "selector" apart.  We used <code>ul li a</code>.  What this is really saying is, "Find any
+                            Let's pick the "selector" apart.  We used <code>ul li a</code>.  What this is really saying is, "Find any
                             <code>a</code> tags that are children of <code>li</code> tags, where the <code>li</code> tag is a child
-                            of a <code>ul</code> tag.  Put another way, "Find all anchor tags that are inside an li tag inside a ul".
+                            of a <code>ul</code> tag." Put another way, "Find all anchor tags that are inside an li tag inside a ul."
                         </div>
 
                         <div class="point">
@@ -316,8 +315,8 @@
 
                         <div class="point">
                             The <code>querySelectorAll</code> function returns a <code>NodeList</code> which looks like an array, but
-                            actually isn't.  It's kind of like the <code>arguments</code> property inside a function, it has a length
-                            property, but doesn't have other array methods like push, pop, etc...
+                            actually isn't.  It's kind of like the <code>arguments</code> property inside a function; it has a length
+                            property, but doesn't have other array methods like push, pop, etc.
                         </div>
 
                         <div class="point">
@@ -333,8 +332,8 @@
 </pre>
 
                         <div class="point">
-                            Since a <code>NodeList</code> looks a lot like an array, and has a length property, that means it can be
-                            used as the basis for a loop, yeah?  Lets loop over each link, and log to the console the <code>href</code>
+                            Since a <code>NodeList</code> looks a lot like an array and has a length property, it can be
+                            used as the basis for a loop, yeah?  Let's loop over each link and log to the console the <code>href</code>
                             property of each node.
                         </div>
 
@@ -357,9 +356,9 @@
                 <div class="col-md-9">
                     <div class="point">
                         <ul class="list">
-                            <li>Use the Repo that we made in the skill builder and flush out the rest of the javascript app.</li>
-                            <li>Display the contents of the array on the web page using DOM minipulation</li>
-                            <li>Use at least 3 colors including text colors and pick a cool font from Google Fonts(if you aren't sure what that is, Google it! It should be one of the first results to appear!)</li>
+                            <li>Use the Repo that we created in the Skill Builder and flesh out the rest of the Javascript app</li>
+                            <li>Display the contents of the array on the web page using DOM manipulation</li>
+                            <li>Use at least 3 colors (including text colors) and pick a cool font from Google Fonts(if you aren't sure what that is, Google it! It should be one of the first results to appear!)</li>
                         </ul>
                     </div>
                 </div>

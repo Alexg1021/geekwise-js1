@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,9 +37,9 @@
                 <li>Review Take Home Assignment</li>
                 <li>Skill Builder</li>
                 <li>Event Delegation</li>
-                <li>Array sorting</li>
-                <li>Organizing An application</li>
-                <li>TakeHome</li>
+                <li>Array Sorting</li>
+                <li>Organizing an Application</li>
+                <li>Take Home</li>
             </ul>
         </div>
     </div>
@@ -54,9 +54,9 @@
                     <li>Part 1: If you haven't finished the take home from last class, finish it up</li>
                     <li>Part 2: Take the skills that we taught you from last class and make a new <span class="success">index.html</span> file.
                         <ul>
-                            <li>With javascript create an h1 tag with the text content equal to the title you want to give the page.</li>
+                            <li>With Javascript create an h1 tag with the text content equal to the title you want to give the page.</li>
                             <li>Append an "a" tag to the h1, and set the "href" to the webpage you are building.</li>
-                            <li>When you are finished, send me or Adam an explination of what the "." in javascript means (this is possibly the most important part of the skill builder).</li>
+                            <li>When you are finished, send me or Rocky an explaination of what the "." in Javascript means (this is possibly the most important part of the skill builder.)</li>
                         </ul>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@
             <div class="point">
                 As we've seen so far, all of our event handlers are attached directly to the element they work with.
                 We attached click handlers on our li tags to alert a movie title, etc...  When this happens 1 copy
-                of the function is created and stored for every event listener.  Imagine if we had an html list with
+                of the function is created and stored for every event listener.  Imagine if we had an HTML list with
                 500 items in it.  If we wanted to register a callback for every one of the li tags, that would
                 store 500 copies of a callback function in memory!  There is a better way!
             </div>
@@ -81,23 +81,23 @@
             <h3>Event Bubbling</h3>
 
             <div class="point">
-                In order to leverage a better way of watching using event listeners, we have to first understand
+                In order to leverage a better way of using event listeners, we have to first understand
                 how events in a browser work.
             </div>
 
             <div class="point">
-                The idea of <code>event bubbling</code> simply means that an event bubbles up the dom tree, triggering
-                the given event <strong>on every node</strong> up the dom tree.
+                The idea of <code>event bubbling</code> simply means that an event bubbles up the DOM tree, triggering
+                the given event <strong>on every node</strong> up the DOM tree.
             </div>
 
             <div class="point">
-                So if I click on a button, the click event starts at the button, then moves to it's parent, then
-                to that elements parent and so on, until it reaches the top of the document.
+                So if I click on a button, the click event starts at the button, then moves to its parent, then
+                to that element's parent and so on, until it reaches the top of the document.
             </div>
 
             <div class="point">
-                Lets create an example that uses event bubbling and it should become more clear how we might be
-                able to use this.  Start with a ul that has 5 li's in it.
+                Let's create an example that uses event bubbling so that it becomes more clear how we might be
+                able to use this.  Start with a ul that has 5 lis in it.
             </div>
 
 <pre>
@@ -115,7 +115,7 @@
             <div class="point">
                 Now I want to be able to click on any li and alert the text of that node.  But instead of attaching
                 an event listener to every li, I'll just do it on the ul.  When we click on a li, the event will
-                bubble up to it's parent (the UL) and the click event handler we'll set up will fire.
+                bubble up to its parent (the UL) and the click event handler we'll set up will fire.
             </div>
 
 <pre>
@@ -128,12 +128,12 @@
 </pre>
 
             <div class="point">
-                Ok, so what is the <code>this</code> context in our callback?  It's the ul right?  So how can we
+                OK, so what is the <code>this</code> context in our callback?  It's the ul, right?  So how can we
                 know which li was actually clicked on that caused the click event that bubbled to the ul?
             </div>
 
             <div class="point">
-                Lets take a closer look at the <code>evt</code> object that the event handler received.
+                Let's take a closer look at the <code>evt</code> object that the event handler received.
             </div>
 
 <pre>
@@ -150,7 +150,7 @@
             </div>
 
             <div class="point">
-                So now lets use this new <code>evt.target</code> property to get the <code>textContent</code> of
+                Now lets use this new <code>evt.target</code> property to get the <code>textContent</code> of
                 the li we clicked on and alert that.
             </div>
 
@@ -163,12 +163,12 @@
 </pre>
 
             <div class="point">
-                So now we only have 1 event handler for click events, which through the <code>evt</code> object
-                we can determine which thing was actually clicked on, and do something with that.
+                Now we only have 1 event handler for click events. Through the <code>evt</code> object
+                we can determine which thing was actually clicked on and do something with it.
             </div>
 
             <div class="point">
-                Event delegation can single handedly reduce memory consumption of your app by great amounts if
+                Event delegation can single-handedly reduce memory consumption of your app by great amounts if
                 used properly.
             </div>
 
@@ -180,13 +180,13 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                We've done quite a bit with array's to this point, and they've proven to be a useful data structure for
+                We've done quite a bit with arrays up to this point, and they've proven to be a useful data structure for
                 holding content when order matters.
             </div>
 
             <div class="point">
-                One useful function we've yet to discuss is sorting an array.  Array's come with built in methods that
-                allow for sorting an array in just about any way you want to.  Lets start by taking a look at a numeric
+                One useful function we've yet to discuss is sorting an array.  Arrays come with built-in methods that
+                allow for sorting an array in just about any way imaginable.  Let's start by taking a look at a numeric
                 sort.
             </div>
 
@@ -197,7 +197,7 @@
     </code>
 </pre>
 
-            <div class="point">Awesome, we get the array, sorted by number.  Lets try a different example.</div>
+            <div class="point">Awesome! We get the array sorted by number.  Let's try a different example:</div>
 
 <pre>
     <code class="language-javascript">
@@ -207,17 +207,17 @@
 </pre>
 
             <div class="point">
-                Notice anything odd about the way that array was sorted?  Here is a good example of why javascript sometimes
-                can leave you scratching your head.  We can see that we got something like 1, 10, 100, 2, ...  Why is that?
+                Notice anything odd about the way that array was sorted?  Here is a good example of why Javascript sometimes
+                can leave you scratching your head.  We can see that we got something like 1, 10, 100, 2, ....  Why is that?
             </div>
 
             <div class="point">
-                The answer is that by default, js will sort things in Unicode order, which gives you something like the result
-                above.  So...how can we make this act in a more sane way?
+                The answer is that by default, JS will sort things in Unicode order, which gives you something like the result
+                above.  So how can we make this act in a more sane way?
             </div>
 
             <div class="point">
-                The sort function actually takes an argument, that is a function.  This function can do the job of determining
+                The sort function actually takes an argument that is a function.  This function can do the job of determining
                 how to sort the array, which means that you can sort in numerous ways.
             </div>
 
@@ -235,8 +235,8 @@
 </pre>
 
             <div class="point">
-                So the sorting function receives two arguments, usually aliased to <code>a</code> and <code>b</code>.  These
-                are two elements from the array.  The sorting functions job is to compare the two array items and determine
+                The sorting function receives two arguments, usually aliased to <code>a</code> and <code>b</code>.  These
+                are two elements from the array.  The sorting function's job is to compare the two array items and determine
                 which is larger.  The return value of the sorting function will determine if the "a" element is sorting higher
                 or lower than the "b" element.
             </div>
@@ -247,7 +247,7 @@
                 <ul class="list">
                     <li>If the return value of the sorting function is a negative number, sort <code>a</code> lower than <code>b</code>.</li>
                     <li>If the return value of the sorting function is a positive number, sort <code>a</code> higher than <code>b</code>.</li>
-                    <li>If the return value is 0, this signifies that the values are equal, so do not change these elements order.</li>
+                    <li>If the return value is 0, this signifies that the values are equal, so do not change these elements' order.</li>
                 </ul>
             </div>
 
@@ -265,7 +265,7 @@
 </pre>
 
             <div class="point">
-                Lets hypothetically say a = 100 and b = 10;  100 - 10 === 90, which is a positive number, so <code>a</code>
+                Let's hypothetically say a = 100 and b = 10;  100 - 10 === 90 (a positive number.) So <code>a</code>
                 would be sorted higher than <code>b</code>.  If a = 10 and b = 100, then 10 - 100 === -90, so <code>a</code>
                 would be sorted lower than <code>b</code>.
             </div>
@@ -273,7 +273,7 @@
             <h3>Array String Sorting</h3>
 
             <div class="point">
-                String sorting for array's is a little nicer than numbers.  You can use greater than / less than operators
+                String sorting for arrays is a little nicer than numbers.  You can use greater than / less than operators
                 with strings where "a" is the lowest value and "z" is the highest value.
 
                 <div class="excercise">
@@ -284,7 +284,7 @@
             </div>
 
             <div class="point">
-                Lets sort an array of strings.
+                Let's sort an array of strings.
             </div>
 
 <pre>
@@ -297,14 +297,14 @@
 </pre>
 
             <div class="point">
-                So, without much intervention on our part, an array of strings can be sorted just by calling sort on it.
+                Without much intervention on our part, an array of strings can be sorted just by calling sort on it.
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-3">
-            <h2 class="text-right">Organizing an application</h2>
+            <h2 class="text-right">Organizing an Application</h2>
         </div>
         <div class="col-md-9">
             <div class="point">
@@ -313,23 +313,23 @@
             </div>
 
             <div class="point">
-                Lets talk about some best practices for structuring our application for the final project.
+                Let's talk about some best practices for structuring our application for the final project.
             </div>
 
             <div class="point">
-                We've talked a lot about function scope, and how functions create their own scope that is inaccessible
-                from outer scopes.  We've also talked a lot about how anything written in an "outer most" scope (global
-                scope) will become part of the global scope (IE the window object).
+                We've talked a lot about function scope and how functions create their own scope which is inaccessible
+                from outer scopes.  We've also talked a lot about how anything written in an "outermost" scope (global
+                scope) will become part of the global scope (IE the window object.)
             </div>
 
             <div class="point">
-                When you begin writing a lot of javascript, it becomes desirable to <strong>NOT</strong> make everything
+                When you begin writing a lot of Javascript, it becomes desirable to <strong>NOT</strong> make everything
                 part of the global scope.  We want to avoid cluttering the global scope with every function, variable, and
                 object we create.  This is just good practice.
             </div>
 
             <div class="point">
-                So how do we avoid creating EVERYTHING on the global scope?  Lets try something.  Run the code below in
+                So how do we avoid creating EVERYTHING on the global scope?  Let's try something.  Run the code below in
                 your console.
             </div>
 
@@ -340,7 +340,7 @@
 </pre>
 
             <div class="point">
-                Simply trying to access window.foo returns undefined, because it's not yet been created.  So lets
+                Simply trying to access window.foo returns undefined, because it's not yet been created.  So let's
                 create it.
             </div>
 
@@ -361,8 +361,8 @@
 </pre>
 
             <div class="point">
-                So now that we've created the function foo, it's actually part of the global scope, <code>window</code>.
-                This is what we want to try and avoid.  So, how do we do that?
+                Now that we've created the function foo, it's actually part of the global scope; <code>window</code>.
+                This is what we want to try to avoid.  So, how do we do that?
             </div>
 
             <div class="point">
@@ -371,12 +371,12 @@
 
             <div class="point">
                 With an <code>IIFE</code> you essentially create a function that gets called immediately that will enclose
-                all of our functionality within a function, which means <code>NOTHING</code> will be able to clutter our
-                global scope (some exceptions do apply)
+                all of our functionality within a function. This means <code>NOTHING</code> will be able to clutter our
+                global scope (some exceptions do apply.)
             </div>
 
             <div class="point">
-                First, let's look at what an <code>IIFE</code> looks like
+                First, let's demonstrate what an <code>IIFE</code> looks like
             </div>
 
 <pre>
@@ -388,38 +388,38 @@
 </pre>
 
             <div class="point">
-                So what is going on here?  Lets pick it apart...
+                So what is going on here?  Let's pick it apart...
             </div>
 
             <div class="point">
-                We have an outermost set of parenthesis that contain a function, followed by an inner set of parenthesis.
+                We have an outermost set of parentheses that contain a function, followed by an inner set of parentheses.
             </div>
 
             <div class="point">
-                The outermost set of parenthesis followed by the function keyword tells javascript to expect a function
-                expression and not a function declaration.  The innermost parenthesis will immediately call the anon
+                The outermost set of parentheses followed by the function keyword tells Javascript to expect a function
+                expression and not a function declaration.  The innermost parentheses will immediately call the anonymous
                 function and execute the function body.
             </div>
 
             <div class="point">
-                Ok, so why do we need this?  Well as we discussed previously, functions create a new scope, so functions,
-                variables, etc...that get created in the <code>IIFE</code> belong to that scope, and not the global scope.
+                OK, why do we need this?  As we discussed previously, functions create a new scope. Functions,
+                variables, etc that are created in the <code>IIFE</code> belong to that scope, not the global scope.
             </div>
 
             <div class="point">
-                In this way, we can have javascript files that are only concerned with their own purpose, to capitalize
-                words, or create new elements, etc...This is known as writing <code>modular</code> code.
+                In this way, we can have Javascript files that are only concerned with their own purposes; to capitalize
+                words, or create new elements, etc. This is known as writing <code>modular</code> code.
             </div>
 
             <div class="point">
-                One major gotcha here...if our "modules" that we are creating are created inside an <code>IIFE</code>,
+                One major gotcha here: if the "modules" that we are creating are created inside an <code>IIFE</code>,
                 and an <code>IIFE</code> creates a new scope that the outer scopes can't reach, how can code in another
                 file access our <code>e</code> function?
             </div>
 
             <div class="point">
-                The short answer is that it can't.  You MUST assign something back to the window object so that other
-                code can use it.
+                The short answer is: it can't.  You MUST assign something back to the window object, allowing other
+                code to use it.
             </div>
 
             <div class="point">
@@ -430,7 +430,7 @@
                 <code>window.attribute = variable;</code>
 
                 <div class="excercise">
-                    Try it: Create <code>IIFE</code> in your javascript and assign a function to the window. in your console call the window attribute
+                    Try it: Create an <code>IIFE</code> in your Javascript and assign a function to the window. in your console call the window attribute
                 </div>
             </div>
         </div>
@@ -442,15 +442,15 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                Continue to polush the look of your toDoList site and...
+                Continue to polish the look of your toDoList site and:
                 <ol class="list">
-                    <li>Add a <code>checkbox</code> to each <code>li</code> that when checked will lighten the text and add a strike through.</li>
-                    <li>Add a <code>delete button</code> to each <code>li</code> that when clicked will confirm the user wishes to delete the item and then remove it.</li>
+                    <li>Add a <code>checkbox</code> to each <code>li</code> that, when checked, will lighten the text and add a strike-through</li>
+                    <li>Add a <code>delete</code> button to each <code>li</code> that, when clicked, will confirm that the user wishes to delete the item and then remove it</li>
                 </ol>
 
                 Bonus:
                 <ol class="list">
-                    <li>Insure that when the <code>checkbox</code> is unchecked, the text goes back to normal</li>
+                    <li>Ensure that when the <code>checkbox</code> is unchecked, the text goes back to normal</li>
                 </ol>
             </div>
         </div>

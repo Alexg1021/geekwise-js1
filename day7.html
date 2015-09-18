@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,9 +30,9 @@
             <ul>
                 <li>Review Take Home Assignment</li>
                 <li>Skill Builder</li>
-                <li>the <code>arguments</code> keyword</li>
-                <li>function scope</li>
-                <li>function expressions and other gotchas</li>
+                <li>The <code>arguments</code> Keyword</li>
+                <li>Function Scope</li>
+                <li>Function Expressions and Other Gotchas</li>
             </ul>
         </div>
     </div>
@@ -46,15 +46,15 @@
             <div class="point">
                 <ul class="list">
                     <li>Create a new function called <code>dinosaur</code> that has a signature <code>dinosaur(type, era, food)</code></li>
-                    <li>Your function should return an array containing the type, era and eating habits (carnivore or herbivore) passed into the function.</li>
-                    <li>Create a second function that contains a <code>for</code> loop.</li>
-                    <li>Create an empty <code>array</code> for dinosaurs.</li>
+                    <li>Your function should return an array containing the type, era and eating habits (carnivore or herbivore) passed into the function</li>
+                    <li>Create a second function that contains a <code>for</code> loop</li>
+                    <li>Create an empty <code>array</code> to store dinosaurs</li>
                     <li><code>Prompt</code> the user for how many dinosaurs they want to input.</li>
-                    <li>The <code>for</code> loop should run the number of times specified by the user.</li>
-                    <li>In the loop <code>prompt</code> the user for the type of dinosaur, the era in which it lived and it's eating habits.</li>
+                    <li>The <code>for</code> loop should run the number of times specified by the user</li>
+                    <li>In the loop <code>prompt</code> the user for the type of dinosaur, the era in which it lived and its eating habits</li>
                     <li>Call the <code>dinosaur()</code> function in each loop with the user supplied info and push the returned arrays onto your dinosaur array</li>
-                    <li>After the the user has input all of their dinosaurs, create a second loop to loop over the dinosaur array of arrays and create a
-                        <code>console.log</code> or an <code>alert</code> stating the type era and eating habits of each dinosaur.</li>
+                    <li>After the user has input all of their dinosaurs, create a second loop to loop over the dinosaur array of arrays and create a
+                        <code>console.log</code> or an <code>alert</code> stating the type, era and eating habits of each dinosaur</li>
 
                 </ul>
             </div>
@@ -63,27 +63,26 @@
 
     <div class="row">
         <div class="col-md-3">
-            <h3>The <code>arguments</code> keyword</h3>
+            <h3>The <code>arguments</code> Keyword</h3>
         </div>
 
         <div class="col-md-9">
                 <div class="point">
-                    This is more of an advanced topic, but worth mentioning here.  Inside any javascript function, you will
-                    have available to use an array like object called <code>arguments</code>.
+                    This is more of an advanced topic, but worth mentioning here.  Inside any Javascript function, you can utilize an array-like object called <code>arguments</code>.
                 </div>
 
                 <div class="point">
-                    I say array like because it looks like an array, but is actually missing many of the functions arrays
+                    I say "array-like" because it looks like an array, but is actually missing many of the functions arrays
                     have to work with.  However, it does contain a <code>length</code> property.
                 </div>
 
                 <div class="point">
-                    Lets take a look at how the <code>arguments</code> variable works.
+                    Let's take a look at how the <code>arguments</code> variable works.
 
                     <div class="excercise">
-                        Try it: lets create a function that will add up all of the arguments we pass into it.  In all other
-                        cases we've looked at, you must map the arguments being passed into the function, to the function
-                        declaration itself, so the <code>arguments</code> variable will actually let us handle an arbitrary
+                        Try it: let's create a function that will add up all of the arguments we pass into it.  In all other
+                        cases we've looked at, you must map all the arguments being passed into the function to the function
+                        declaration itself. The <code>arguments</code> variable will actually let us handle an arbitrary
                         number of arguments.  This means we don't need to define the arguments in the function <strong>signature</strong>.
                     </div>
                 </div>
@@ -97,7 +96,7 @@ function adder() {
 </pre>
 
             <div class="point">
-                Lets finish this function by making it add up all of the arguments we pass into it.  Anything non numberish
+                Lets finish this function by making it add up all of the arguments we pass into it.  Anything non-numberish
                 should be ignored.  For instance, if I call <code>adder(1, 2, "foo")</code>, the result should be 3.
             </div>
         </div>
@@ -111,12 +110,12 @@ function adder() {
         </div>
 
         <div class="col-md-9">
-            <div class="point">Every js program runs with a "scope".  This can be thought of as the things that are
+            <div class="point">Every JS program runs with a "scope."  Scope can be thought of as the things that are
             currently available to the execution of a program.  The main / base scope is referred to as the "global"
             scope.</div>
 
             <div class="point">
-                Creating a function in javascript creates a new scope
+                Creating a function in Javascript creates a new scope
             </div>
 
             <div class="point">
@@ -131,14 +130,13 @@ function foo() {
     return a;
 }
 
-console.log(a); //undefined, because "a" is "scoped" to the foo function
-console.log(foo()); //should log "inside foo" because the function was called, and a value returned
+console.log(a); //Returns undefined because "a" is "scoped" to the foo function
+console.log(foo()); //Should log "inside foo" because the function was called, and a value returned
     </code>
 </pre>
 
             <div class="point">
-                Got it, code outside of a function can't access anything other than what's returned from a function.  So
-                it stands to reason that code inside a function can't access anything outside of the function either?
+                Got it; code outside of a function can't access anything other than what's returned from a function.  So it stands to reason that code inside a function can't access anything outside of the function either, right?
             </div>
 
 <pre>
@@ -155,9 +153,9 @@ console.log(capitalizedName);
 </pre>
 
             <div class="point">
-                Ah, maybe not what you expected?  Functions do have access to the variables and other functions that exists
+                Ah, maybe not what you expected?  Functions do have access to the variables and other functions that exist
                 in outer scopes (which, when you think about it, is why you can console.log(...) something inside of a
-                function.
+                function.)
             </div>
         </div>
 
@@ -166,25 +164,23 @@ console.log(capitalizedName);
         </div>
 
         <div class="col-md-3">
-            <h3>Function Expressions and other Gotchas</h3>
+            <h3>Function Expressions and Other Gotchas</h3>
         </div>
 
         <div class="col-md-9">
             <div class="point">
-                So now we know how to write a function, but there are other ways to do it as well.  You'll surely encounter
-                them in the wild so it's nice to know what's going on when you see them.
+                Now we know how to write a function, but there are other ways to do it as well.  You'll surely encounter them in the wild so it's nice to know what's going on when you see them.
             </div>
 
             <div class="point">
-                Functions in javascript are "first class".  This means they can be passed as arguments to other functions,
-                returned from other functions, and assigned to variables (instead of being a named function).
+                Functions in Javascript are "first class."  This means they can be passed as arguments to other functions, returned from other functions, and assigned to variables (instead of being a named function.)
             </div>
 
             <div class="point">
                 When a function is assigned to a variable, it's called a <strong>function expression</strong>.
 
                 <div class="excercise">
-                    Try it: Create a function expression that assigned a function to a variable.
+                    Try it: Create a function expression that assigns a function to a variable.
                 </div>
             </div>
 
@@ -198,8 +194,8 @@ var capitalize = function (str) {
 
 
             <div class="point">
-                So what is different here.  Notice, the function declaration does not have a name.  This is what is known as
-                an <code>Anonymous function</code>, or a function with no name.
+                So what is different here?  Notice that the function declaration does not have a name.  This is what is known as
+                an <code>anonymous function</code>, or a function with no name.
             </div>
 
             <div class="point">
@@ -226,7 +222,7 @@ console.log(capitalize("adam"));
 </pre>
 
             <div class="point">
-                One thing to note about anonymous functions, they don't actually have to be anonymous.  In fact, it's good
+                One thing to note about anonymous functions; they don't actually have to be anonymous.  In fact, it's good
                 practice to name all your functions, for the purposes of error reporting.  The function below will work
                 just the same.
             </div>
@@ -246,8 +242,8 @@ console.log(capitalize("adam"));
 </pre>
 
             <div class="point">
-                Now, lets try an experiment.  Lets create a new function (not a function expression) called <code>logName</code>.
-                Then, above that code, lets call <code>logName</code>.  What would you expect to happen?
+                Now let's try an experiment.  Let's create a new function (not a function expression) called <code>logName</code>.
+                Then, above that code, let's call <code>logName</code>.  What would you expect to happen?
             </div>
 
 <pre>
@@ -261,14 +257,12 @@ function logName(name) {
 </pre>
 
             <div class="point">
-                This is due to something javascipt is doing called <code>hoisting</code>.
+                This is due to something Javascript is doing called <code>hoisting</code>.
             </div>
 
             <div class="point">
-                Even though javascript executes <strong>linearly</strong>, variable and function definitions are actually
-                "hoisted" to the top of the scope.  So even though we call logName before we define it, javascript is actually
-                recognizing the definition of the function, hoisting it to the top of the scope, which makes it available to
-                call before the definition in the code actually happens.
+                Even though Javascript executes <strong>linearly</strong>, variable and function definitions are 
+                "hoisted" to the top of the scope.  So even though we call logName before we define it, Javascript automatically recognizes the definition of the function and hoists it to the top of the scope. This makes it available to call before the definition in the code actually appears.
             </div>
 
             <div class="point">
@@ -299,7 +293,7 @@ var foo = function (name) {
             </div>
 
             <div class="point">
-                Lets look at this a little closer.  What would you expect to happen in the example below?
+                Let's look at this a little closer.  What would you expect to happen in the example below?
             </div>
 
 <pre>
@@ -329,16 +323,16 @@ alertName();
             </div>
             <div class="col-md-9">
                 <div class="point">
-                    Write a js program that will:
+                    Write a JS program that will:
 
                     <ul class="list">
-                        <li>Create a function tied to a <code>click</code> of a button in the HTML.</li>
+                        <li>Create a function that is tied to the <code>click</code> of a button in your HTML</li>
                         <li>The function should ask if the user prefers math or art</li>
-                        <li>Create two other functions, one called <code>math()</code> and one called <code>art()</code>.</li>
-                        <li>In the first function, call one of the other functions based on the users choice.</li>
-                        <li>The math() function should prompt the user for two numbers and alert the sum of the two numbers.</li>
-                        <li>The art() function should prompt the user for their two favorite art styles. Then it should ask which of the two is their favorite.</li>
-                        <li>Finally it should alert the two styles in the users order of preference.</li>
+                        <li>Create two other functions; one called <code>math()</code> and one called <code>art()</code>.</li>
+                        <li>In the first function, call one of the other functions based on the user's choice</li>
+                        <li>The math() function should prompt the user for two numbers and alert the sum of the two numbers</li>
+                        <li>The art() function should prompt the user for their two favorite art styles. Then it should ask which of the two is their favorite</li>
+                        <li>Finally it should alert the two styles in the user's order of preference</li>
                     </ul>
                 </div>
             </div>

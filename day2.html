@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,12 +25,12 @@
             </div>
             <div class="col-md-9 concepts">
                 <ul>
-                    <li>alert / confirm / prompt</li>
+                    <li>Alert / Confirm / Prompt</li>
                     <li>Skill Builder</li>
-                    <li>Symantics in the syntax</li>
+                    <li>Symantics in the Syntax</li>
                     <li>Operators</li>
-                    <li>Math</li>
-                    <li></li>
+                    <li>Math</li><!-- 
+                    <li></li> -->
                 </ul>
             </div>
         </div>
@@ -41,26 +41,26 @@
             </div>
             <div class="col-md-9">
                 <div class="refresh">
-                    We will get much deeper into functions in the following class sessions, but for now, understand
-                    a function is nothing more than some grouped javascript behavior that performs a
+                    We will get much deeper into functions in the following class sessions. For now, understand
+                    a function is nothing more than some grouped Javascript behavior that performs
                     specific actions.  You <code>call</code> a function.  It <code>return</code>s a value.
                 </div>
-                <div class="point"><code>alert()</code> and <code>confirm()</code> and <code>prompt()</code> can all be used to convey / solicit information from a user</div>
-                <div class="point"><code>alert()</code> is a read only type of deal</div>
+                <div class="point"><code>alert()</code> and <code>confirm()</code> and <code>prompt()</code> can all be used to convey / solicit information from a user.</div>
+                <div class="point"><code>alert()</code> is a read only type of deal.</div>
                 <div class="point"><code>confirm()</code> will return bool depending on the button the user clicked.</div>
                 <div class="point"><code>prompt()</code> will allow you to ask the user for input, and then use it in your script.</div>
-                <div class="point">All three functions stop the execution of the javascript until some action takes place.</div>
+                <div class="point">All three functions stop the execution of the Javascript until some action takes place.</div>
                 <div class="point">
                     <div class="exampleLeadin">Some Examples</div>
                     <pre>
                         <code class="language-javascript">
-//tell the user something
+//Tell the user something
 alert("Ah, hi there, I'll wait here till you close me");
 
-//confirm a users action
+//Confirm a user's action
 confirm("Sure you want to do that...?");
 
-//ask the user for input
+//Ask the user for input
 prompt("What is your name?");
                         </code>
                     </pre>
@@ -74,16 +74,16 @@ prompt("What is your name?");
                 <div class="point">
                     <ul>
                         <li>Create a new script called <code>app.js</code></li>
-                        <li>In app.js, do the following:
+                        <li>In app.js do the following:
                             <ul class="list">
                                 <li>Ask for your first name</li>
                                 <li>Ask for your last name</li>
                                 <li>Log your first name to the console</li>
                                 <li>Alert your last name</li>
                                 <li>Confirm (anything) and alert the result of the confirm</li>
-                                <li>Include your <code>app.js</code> file in a blank empty html page</li>
+                                <li>Include your <code>app.js</code> file in a blank empty HTML page</li>
                                 <li>Execute your script</li>
-                                <li>confirm that your script functions the way it's expected too</li>
+                                <li>Confirm that your script functions the way it's expected to</li>
                             </ul>
                         </li>
                     </ul>
@@ -93,13 +93,13 @@ prompt("What is your name?");
 
         <div class="row">
             <div class="col-md-3">
-                <h2 class="text-right">Symantics in the syntax</h2>
+                <h2 class="text-right">Symantics in the Syntax</h2>
             </div>
             <div class="col-md-9">
-                <div class="point">Readability matters</div>
+                <div class="point">Readability Matters</div>
                 <div class="point">camelCasing</div>
                 <div class="point">CaSe SeNsItIvItY</div>
-                <div class="point">whitespace</div>
+                <div class="point">Whitespace</div>
             </div>
         </div>
 
@@ -115,7 +115,7 @@ prompt("What is your name?");
                 <div class="point">
                     Some operators you will see often include:
                     <ul class="list">
-                        <li>Mathmatical
+                        <li>Mathematical
                             <ul class="list">
                                 <li><code>=</code> (equals, assignment)</li>
                                 <li><code>+</code> (addition)</li>
@@ -158,7 +158,7 @@ prompt("What is your name?");
                 <h2 class="text-right">Math</h2>
             </div>
             <div class="col-md-9">
-                <div class="point">You can perform mathmatical calculations using operators as discussed above.
+                <div class="point">You can perform mathematical calculations using operators as discussed above.
                     <div class="excercise">
                         Try it: open your console and run a few calculations like <code>2 + 2</code>, etc...
                     </div>
@@ -167,7 +167,7 @@ prompt("What is your name?");
                 <div class="point">
                     The "value" of the expression can be stored for later use.
                     <div class="excercise">
-                        Try it: create a variable called <code>result</code>.  Add two numbers together, and store the
+                        Try it: create a variable called <code>result</code>.  Add two numbers together and store the
                         value in your result variable using the <code>=</code> operator.  Log that value to the console.
                     </div>
                 </div>
@@ -210,7 +210,7 @@ console.log(b);
 </pre>
 
                 <div class="point">
-                    Operator Precedence, works like it did when you were in sixth grade.
+                    Operator Precedence works like it did when you were in sixth grade.
                     <ol class="list">
                         <li>Parentheses</li>
                         <li>Multiplication / Division</li>
@@ -219,17 +219,17 @@ console.log(b);
                 </div>
 
                 <pre><code class="language-javascript">
-//what's the answer?
+//What's the answer?
 var a = 5 + 5 * 10;
 console.log(a);
                 </code></pre>
 
                 <div class="point">
                     If you wanted to have the <code>5 + 5</code> evaluate first, you would need to use
-                    paren's to group the parts you want to take precedence.
+                    parentheses to group the parts you want to take precedence.
                 </div>
                 <pre><code class="language-javascript">
-//what's the answer?
+//What's the answer?
 var a = (5 + 5) * 10;
 console.log(a);
                 </code></pre>
@@ -237,9 +237,9 @@ console.log(a);
                 <div class="point">
                     The modulus <code>%</code> is a usful operator to know how to leverage.
                 </div>
-                <div class="point">You can use modulus to determine if something is even or odd, a typical use is if
-                you are generating content like rows in a table, and you want to put an "even" class on even rows
-                and and "odd" class on odd rows.</div>
+                <div class="point">You can use modulus to determine if something is even or odd. A typical use is if
+                you are generating content like rows in a table and you want to put an "even" class on even rows
+                and an "odd" class on odd rows.</div>
                 <pre><code class="language-javascript">
 var a = 5;
 console.log(a % 2); // 1
@@ -249,9 +249,9 @@ var b = 6;
 console.log(b % 3); // 0
                 </code></pre>
 
-                <div class="point">It's also very easy to increment / decrement a number by one using javascript.</div>
+                <div class="point">It's also very easy to increment / decrement a number by one using Javascript.</div>
                 <div class="point">Use the <code>++</code> or <code>--</code> operators, Note: these do not require
-                re-assigning the value to a variable, the work on existing variables.</div>
+                re-assigning the value to a variable; they work on existing variables.</div>
 
                 <pre><code class="language-javascript">
 var a = 5;
@@ -264,8 +264,8 @@ b--;
 console.log(b);
                 </code></pre>
 
-                <div class="point"><code>parseInt(number)</code> can be used for converting a float to an int, or for turning a string
-                into an int.</div>
+                <div class="point"><code>parseInt(number)</code> can be used for converting a float to an integer, or for turning a string
+                into an integer.</div>
 
                 <pre><code class="language-javascript">
 var a = 1.6;
@@ -275,7 +275,7 @@ var c = "5";
 var d = parseInt(c); // number data type 5
                 </code></pre>
 
-                <div class="point">If you try and parse a value that can't be turned into a number, you will get NaN (
+                <div class="point">If you try to parse a value that can't be turned into a number, you will get NaN (
                 not a number)</div>
 
                 <pre><code class="language-javascript">
@@ -303,12 +303,12 @@ console.log(isNaN(b)); //true
             </div>
             <div class="col-md-9">
                 <div class="point">
-                    Write a script, and accompanying html file that will:
+                    Write a script and accompanying HTML file that will:
                     <ol class="list">
                         <li>Prompt for a number value (provide a default of 10)</li>
                         <li>Prompt for another number value (provide a default of 10)</li>
                         <li>Convert the promped values into integers.</li>
-                        <li>add the numbers together and alert the user with the outcome.</li>
+                        <li>Add the numbers together and alert the user with the outcome</li>
                     </ol>
                 </div>
             </div>

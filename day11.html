@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,10 +35,10 @@
         <div class="col-md-9 concepts">
             <ul>
                 <li>Review Take Home Assignment</li>
-                <li>array forEach</li>
+                <li>Array forEach</li>
                 <li>More DOM</li>
                 <li>Date Object</li>
-                <li>Other fun stuff</li>
+                <li>Other Fun Stuff</li>
                 <li>Final Project</li>
             </ul>
         </div>
@@ -46,7 +46,7 @@
 
     <div class="row">
         <div class="col-md-3">
-            <h2 class="text-right">array forEach</h2>
+            <h2 class="text-right">Array forEach</h2>
         </div>
 
         <div class="col-md-9">
@@ -58,7 +58,7 @@
             <div class="point">
                 The idea with a normal <code>for</code> loop is to create a loop that will loop N number of times.  We
                 usually combine this with an array so we can loop over the array contents.  The <code>forEach</code>
-                loop gets right to the point, and automatically loops over all of an array's contents.
+                loop gets right to the point and automatically loops over all of an array's contents.
             </div>
 
 <pre>
@@ -71,8 +71,8 @@
 </pre>
 
             <div class="point">
-                Lets pick that apart.  We first target the <code>arr</code> and call the <code>forEach</code> function.
-                The <code>forEach</code> function takes one argument, the function to call on each item of the array.
+                Let's pick that apart:  We first target the <code>arr</code> and call the <code>forEach</code> function.
+                The <code>forEach</code> function takes one argument; the function to call on each item of the array.
                 That callback function gets one argument, an item in the array, and it can then do something with each
                 of those items.  This might be useful to augment our movieapp.js file, and simplify some things for us.
             </div>
@@ -85,14 +85,14 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                When it comes to the dom, so far we've been creating our dom elements one at a time, and adding them to
+                When it comes to the DOM, so far we've been creating our DOM elements one at a time, and adding them to
                 the DOM.  There are some other methods of creating content that are a little simpler, though not without
                 their drawbacks.
             </div>
 
             <div class="point">
                 The first method allows for creating a chunk of DOM from a string.  So rather than creating a div with
-                create element, we can simply inject a string of HTML into the dom using the <code>innerHTML</code> property
+                <code>createElement</code>, we can simply inject a string of HTML into the DOM using the <code>innerHTML</code> property
                 of an existing node.
             </div>
 
@@ -106,11 +106,11 @@
             <div class="point">
                 Notice, this creates a p element using the normal <code>createElement</code> method, and then sets the
                 innerHTML property to a string of HTML.  This is automatically parsed into proper HTML by the DOM and
-                is suitable for then appending to the dom.
+                is suitable for then appending to the DOM.
             </div>
 
             <div class="point">
-                This method is not without it's drawbacks however, try creating a invalid string of html.
+                This method is not without its drawbacks, however; try creating an invalid string of HTML.
             </div>
 
 <pre>
@@ -125,15 +125,15 @@
                 removing a whole bunch of content.
 
                 <div class="excercise">
-                    Lets return to our takehome and add several <code>toDoItems</code> to the <code>toDoList ul</code> tag.  Then select the <code>ul</code>
+                    Let's return to our take home and add several <code>toDoItems</code> to the <code>toDoList ul</code> tag.  Then select the <code>ul</code>
                     that holds the <code>toDoItems</code> and set the <code>innerHTML</code> property to <code>""</code>.
                 </div>
             </div>
 
             <div class="point">
                 If you're careful with the <code>innerHTML</code> property you can get pretty far.  Again, it's not without
-                it's drawbacks, but it's a useful property to be aware of when you need to create a large amount of dom
-                without all the boiler plate required via <code>createElement</code>, etc...
+                its drawbacks, but it's a useful property to be aware of when you need to create a large amount of DOM
+                without all the boiler plate required via <code>createElement</code>.
             </div>
 
         </div>
@@ -145,17 +145,17 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                The Date object in javascript is a built in way to create, manipulate and display Dates.
+                The Date object in Javascript is a built-in way to create, manipulate and display dates.
             </div>
 
             <div class="point">
-                The date will always be relative to the users computer settings that the javascript is running on,
-                since javascript runs in their browser a date object created at the same time in two different time zones
+                The computer that the Javascript is running on will always determine date the Javascript returns.
+                Since Javascript runs in the user's browser, a date object created at the same time in two different time zones
                 will yield two different date objects.
             </div>
 
             <div class="point">
-                To create a date object, we'll first need to call the Date constructor function.
+                To create a date object, we'll first need to call the date constructor function.
 
                 <div class="excercise">
                     Try it: Create a date object in your console
@@ -170,9 +170,9 @@
 
             <div class="point">
                 The console should output a "stringified" version of a date.  But it is indeed an object, and as we know
-                constructor functions return an object with functions and properties we can use.  To take a closer look
-                lets use another lesser known console function.  It's called <code>dir(...)</code>.  Call <code>dir</code>
-                around your date object and lets see if we can look at the date objects prototype.
+                constructor functions return an object with functions and properties we can use.  To take a closer look,
+                let's use another lesser-known console function.  It's called <code>dir(...)</code>.  Call <code>dir</code>
+                around your date object and let's see if we can look at the date object's prototype.
             </div>
 
 <pre>
@@ -182,22 +182,22 @@
 </pre>
 
             <div class="point">
-                Now we can investigate the Date objects prototype.  Any functions look interesting?
+                Now we can investigate the date object's prototype.  Any functions look interesting?
             </div>
 
             <div class="point">
-                One thing that javascript lacks is a really good way of formatting dates for output once we have created
+                One thing that Javascript lacks is a really good way of formatting dates for output once we have created
                 a date object.
             </div>
 
             <div class="point">
-                Essentially, a javascript date object gives you access to all the individual parts of a date, and you must
+                Essentially, a Javascript date object gives you access to all the individual parts of a date, and you must
                 build a string for output.
             </div>
 
             <div class="point">
-                One useful function on a Date object is the <code>getTime()</code> function.  This functino returns the
-                number of seconds since the epoch (Jan 1, 1970 UTC).  This can be useful if you want to compare two
+                One useful function on a date object is the <code>getTime()</code> function.  This functino returns the
+                number of seconds since the Epoch (Jan 1, 1970 UTC).  This can be useful if you want to compare two
                 date objects since the number of seconds will always be relative to the Epoch.
             </div>
 
@@ -220,13 +220,11 @@
 </pre>
 
             <div class="point">
-                The <code>getMonth</code> function is zero based, for some reason, of which I'm not even sure.  Go home
-                javascript, you're drunk.
+                For some reason, of which I'm not even sure, the <code>getMonth</code> function is zero-based (IE January in <code>getMonth</code> is 0.)  Go home, Javascript! You're drunk.
             </div>
 
             <div class="point">
-                Just remember when working with <code>Date</code> objects that <code>getMonth</code> functions are zero
-                based, and require adding 1 to the value to get the current month.
+                Just remember when working with <code>date</code> objects that <code>getMonth</code> functions are zero-based and require adding 1 to the value to get the current month.
             </div>
 
             <div class="point">
@@ -242,22 +240,22 @@
 </pre>
 
             <div class="point">
-                Finally, lets look at the <code>getFullYear()</code> function.  This returns the the full year as a 4 digit
+                Finally, let's look at the <code>getFullYear()</code> function.  This returns the full year as a 4-digit
                 number.
             </div>
 
 <pre>
     <code class="language-javascript">
         var d = new Date();
-        console.log(d.getFullYear()); //2014
+        console.log(d.getFullYear()); //2015
     </code>
 </pre>
 
             <div class="point">
-                So, now you've got the basics to reconstruct a date for display on the screen.
+                Now you've got the basics to reconstruct a date for display on the screen.
 
                 <div class="excercise">
-                    Create a date object, and output a string in MM/DD/YYYY format using the functions discussed above.
+                    Create a date object and output a string in MM/DD/YYYY format using the functions discussed above.
                 </div>
             </div>
 
@@ -282,16 +280,16 @@
                 point to add the rest of the functionality that we'll discuss later in class.
             </div>
 
-            <h3>Generate a random number</h3>
+            <h3>Generate a Random Number</h3>
 
             <div class="point">
                 Random numbers are really useful for a lot of things.  Picking a random item from an array comes to mind
-                but there are many other uses.
+                but there are many other uses as well.
             </div>
 
             <div class="point">
-                To genreate a random number, first, we need to do a bit of math.  The <code>Math</code> object in javascript
-                holds many math functions, look at it in the console, which function seems appropriate for generating a
+                To generate a random number, we first need to do a bit of math.  The <code>Math</code> object in Javascript
+                holds many math functions. Look at it in the console; which function seems appropriate for generating a
                 random number?
             </div>
 
@@ -301,7 +299,7 @@
     </code>
 </pre>
             <div class="point">
-                You probably notices the <code>Math.random</code> function.  Lets try and call that.
+                You probably noticed the <code>Math.random</code> function.  Let's try to call that.
             </div>
 
 <pre>
@@ -311,12 +309,12 @@
 </pre>
 
             <div class="point">
-                Great, so this will generate a random floating point number (notice the decimal).  So in order to get
+                Great! This will generate a random floating point number (notice the decimal.)  So in order to get
                 an integer between 1 - N we need to do some more work.
             </div>
 
             <div class="point">
-                To start off, we need to define the <code>N</code> mentioned above.  That calculateion simply looks like:
+                To start off, we need to define <code>N</code> mentioned above.  That calculateion simply looks like:
             </div>
 
 <pre>
@@ -327,9 +325,9 @@
 </pre>
 
             <div class="point">
-                So, the random number times the thing we want to be the top level bound will yield a random number.  Lets
-                try that.  Try changing up the <code>n</code> in the code above, and the result should always be a random
-                number below <code>n</code>.
+                So, the random number times N (the highest number allowed, which we defined above) will yield a random number.  Let's
+                try that.  Try changing up the <code>N</code> in the code above, and the result should always be a random
+                number below <code>N</code>.
             </div>
 
             <div class="point">
@@ -338,7 +336,7 @@
             </div>
 
             <div class="point">
-                <code>Math.ceil</code> will return the smallest integer that's larger than the given float. ie
+                <code>Math.ceil</code> will return the smallest integer that's larger than the given float. IE
                 <code>Math.ceil(1.1) === 2</code>, <code>Math.ceil(99.0000001) === 100</code>.
             </div>
 
@@ -355,20 +353,20 @@
                 So now we've got a nice little random number script.
 
                 <div class="excercise">
-                    Rename <code>elements.js</code> to <code>helpers.js</code> and update your html page to include
+                    Rename <code>elements.js</code> to <code>helpers.js</code> and update your HTML page to include
                     <code>helpers.js</code>.  In <code>helpers.js</code> create a function called <code>randomNum</code>
                     that takes as an agrument a "top bound" and returns a random number between 1 and that value.
                 </div>
             </div>
 
-            <h3>Create a random string</h3>
+            <h3>Create a Random String</h3>
 
             <div class="point">
-                We'll continue with some randomness by learning how to generate a random string.  (think generated password)
+                We'll continue with some randomness by learning how to generate a random string (think generated password.)
             </div>
 
             <div class="point">
-                First, lets define the things that we want to include in our random string.  We'll create a variable called
+                First, let's define the things that we want to include in our random string.  We'll create a variable called
                 <code>lang</code> that will hold all the characters we'll allow in the string.
             </div>
 
@@ -379,7 +377,7 @@
 </pre>
 
             <div class="point">
-                Would probably be nice to include upper case letters too.
+                It would probably be nice to include uppercase letters too.
             </div>
 
 <pre>
@@ -390,7 +388,7 @@
 </pre>
 
             <div class="point">
-                Great, now we have upper and lower case, lets also include numbers.
+                Great! Now we have upper- and lowercase--let's also include numbers.
             </div>
 
 <pre>
@@ -402,7 +400,7 @@
 </pre>
 
             <div class="point">
-                Ok, so this lang string now defines the allowable chacters that we'll use in our generated strings.
+                This lang string now defines the allowable characters that we'll use in our generated strings.
             </div>
 
             <div class="point">
@@ -419,7 +417,7 @@
 </pre>
 
             <div class="point">
-                Finally we'll loop the number of times specified in length, and generate a random number each time.
+                Finally, we'll loop the number of times, specified in length, and generate a random number each time.
                 The random number will be used to select a single character, and that character will be added to the
                 generated string.
             </div>
@@ -446,20 +444,20 @@
                 So, to walk through the workflow, we are:
 
                 <ul class="list">
-                    <li>creating a lang string that we can use for selecting letters</li>
-                    <li>createing a variable <code>str</code> for storing our generated string</li>
+                    <li>Creating a lang string that we can use for selecting letters</li>
+                    <li>Creating a variable <code>str</code> for storing our generated string</li>
                     <li>Looping <code>len</code> number of times to create a string <code>len</code> characters long</li>
-                    <li>Inside each loop, genreating a random number that is no larger than the length of our lang str</li>
+                    <li>Inside each loop, generating a random number that is no larger than the length of our lang str</li>
                     <li>Using the random number to find a character in the string using bracket syntax</li>
                     <li>Appending the letter to the base <code>str</code> variable</li>
-                    <li>logging the final product.</li>
+                    <li>Logging the final product</li>
                 </ul>
             </div>
 
-            <h3>Add days to a date object</h3>
+            <h3>Add Days to a Date Object</h3>
 
             <div class="point">
-                Date objects in javascript are cool, in that you can easily add days to a date object and it will internally
+                Date objects in Javascript are cool in that you can easily add days to a date object and it will internally
                 calculate the proper date for you.  In order to set the date of a date object, you first need to be able
                 to get the date.
             </div>
@@ -485,15 +483,15 @@
 </pre>
 
             <div class="point">
-                Pretty much all there is too adding days to a date.  We'll be using this in our movie checkout app to
-                simulate a long checkout period.
+                ...that's pretty much all there is to adding days to a date.  <!-- We'll be using this in our movie checkout app to
+                simulate a long checkout period. -->
             </div>
 
-            <h3>Determine the amount of time between two dates?</h3>
+            <h3>Determine the Amount of Time Between Two Dates?</h3>
 
             <div class="point">
                 The final piece to the movie checkout puzzle is knowing how long a movie was checked out for.  To do this,
-                we need to examine two date objects.  Lets set up two date objects, one for today, and one for two days
+                we need to examine two date objects.  Let's set up two date objects; one for today, and one for two days
                 from now.
             </div>
 
@@ -506,7 +504,7 @@
 </pre>
 
             <div class="point">
-                Great, now we need to get the milliseconds from the epoch from those date objects.  This is where
+                Great! Now we need to get the milliseconds from the Epoch from those date objects.  This is where
                 <code>getTime()</code> comes in handy.
             </div>
 
@@ -524,8 +522,8 @@
 </pre>
 
             <div class="point">
-                So now we have the milliseconds for each one, subtracting the check in from the check out will give us the
-                number of milliseconds between the two dates, and then we can convert today's.
+                So now we have the milliseconds for each one. Subtracting the check-in from the check-out will give us the
+                number of milliseconds between the two dates, and then we can convert today's millisecond distance from the Epoch to determine how long it has been between today and the check-out date.
             </div>
 
 <pre>

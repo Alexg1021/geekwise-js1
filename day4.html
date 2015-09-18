@@ -1,5 +1,5 @@
 <!--.row>(.col-md-3>h2.text-right)+.col-md-9-->
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,12 +44,12 @@
         </div>
         <div class="col-md-9">
             <div class="point">
-                Write a js program that will:
+                Write a JS program that will:
 
                 <ul class="list">
-                    <li>Make 10 variables that are the names of your favorite songs.</li>
+                    <li>Make 10 variables that are the names of your favorite songs</li>
                     <li>Alert all of them</li>
-                    <li>If all 10 variables exist, console.log the values. Else delete System32 in you C:// directory.</li>
+                    <li>If all 10 variables exist, console.log the values; Otherwise delete System32 in your C:// directory</li>
                 </ul>
             </div>
         </div>
@@ -61,10 +61,10 @@
             </div>
             <div class="col-md-9">
                 <div class="point">
-                    The act of joining two things together is called "concatenation".
+                    The act of joining two things together is called "concatenation."
                 </div>
                 <div class="point">
-                    In javascript, we can concat two strings using the <code>+</code> operator.  Yes, the same one we
+                    In Javascript, we can concatenate two strings using the <code>+</code> operator.  Yes, the same one we
                     use for math.
                 </div>
 <pre>
@@ -78,7 +78,7 @@ console.log(saltedPassword);
 </pre>
 
                 <div class="point">
-                    However, watch out when trying to concat a string and a number, javascript will attempt to be "helpful"
+                    However, watch out when trying to concat a string and a number. Javascript will attempt to be "helpful"
                     and convert the number into a string.  This is called <strong>type casting</strong>.
                 </div>
 
@@ -109,12 +109,12 @@ console.log(1 + "");
             </div>
             <div class="col-md-9">
                 <div class="point">
-                    Arrays are very useful for keeping an <strong>ordered list</strong> of "things".
+                    Arrays are very useful for keeping an <strong>ordered list</strong> of "things."
                 </div>
 
                 <div class="point">
-                    Array's don't really care what you put into them, they accept all the data types we've talked about
-                    to date, including a few we haven't.
+                    Arrays don't really care what you put into them; they accept all the data types we've talked about
+                    to date along with a few we haven't.
                 </div>
 
                 <div class="point">
@@ -126,17 +126,17 @@ console.log(1 + "");
                 </div>
 
                 <div class="point">
-                    Lets try creating an array to hold a list of your favorite fruits.
+                    Let's try creating an array to hold a list of your favorite fruits.
 
                     <div class="excercise">
-                        Try it: in your console create a new array and store the value in a variable.  Then log the
+                        Try it: In your console create a new array and store the value in a variable.  Then log the
                         variable.
                     </div>
                 </div>
 
 <pre>
     <code class="language-javascript">
-//lets create an array
+//Let's create an array
 var fruits = ["apple", "banana", "cherry", "strawberry"];
 
 console.log(fruits);
@@ -144,30 +144,30 @@ console.log(fruits);
 </pre>
 
                 <div class="point">
-                    Array's have built in ways of determining how many items they are holding, the <code>length</code>
+                    Arrays have built-in ways of determining how many items they are holding: the <code>length</code>
                     property.
 
                     <div class="excercise">
-                        Try it: log to the console the length of the fruits array you created previously.
+                        Try it: Log to the console the length of the fruits array you created previously.
                     </div>
                 </div>
 
 <pre>
     <code class="language-javascript">
-//how many items are in the array?
+//How many items are in the array?
 console.log(fruits.length);
     </code>
 </pre>
 
                 <div class="point">
-                    Ok, so we've got some data in our arrays, and we know how many items are in the array, now how do we
+                    OK, so we've got some data in our arrays and we know how many items are in the array. Now how do we
                     get it back out?
                 </div>
 
                 <h3>Accessing Array Contents</h3>
 
                 <div class="point">
-                    Array's are index based, so you can use a numbered index to retrieve a specific value, using the brackets
+                    Arrays are index based, so you can use a numbered index to retrieve a specific value using the brackets
                     to define which index you want.
                 </div>
 
@@ -177,7 +177,7 @@ var a = [1, 2, 3];
 
 console.log(a[N]); //where N would be a numbered index you want to retrieve
 
-//this works too
+//This works too
 console.log([1, 2, 3, 4][N]);
     </code>
 </pre>
@@ -213,14 +213,14 @@ console.log(fruits[4]); //what does a unknown index return?
     </code>
 </pre>
 
-                <h3>Adding items to an array</h3>
+                <h3>Adding Items to an Array</h3>
 
                 <div class="point">
-                    Awesome, I can get my data back out of an array once I put it in, how do I add more things to it?
+                    Awesome! I can get my data back out of an array once I put it in, how do I add more things to it?
                 </div>
 
                 <div class="point">
-                    Javascript Array's provide a function called <code>push</code> that allows for adding items to the
+                    Javascript arrays provide a function called <code>push</code> that allows for adding items to the
                     <strong>end</strong> of an array.
 
                     <div class="excercise">
@@ -230,7 +230,7 @@ console.log(fruits[4]); //what does a unknown index return?
                 </div>
 <pre>
     <code class="language-javascript">
-//add an item to the end of an array
+//Add an item to the end of an array
 fruits.push("blackberry");
     </code>
 </pre>
@@ -250,18 +250,18 @@ console.log(a.length);
 </pre>
 
                 <div class="point">
-                    Array's can also contain other arrays.
+                    Arrays can also contain other arrays.
                 </div>
 
 <pre>
     <code class="language-javascript">
-//create an array to hold multiple arrays
+//Create an array to hold multiple arrays
 var fruitColors = [];
 var cherry = ["cherry", "red"];
 var banana = ["banana", "yellow"];
 var orange = ["orange", "orange"];
 
-//add all the fruit vars into the fruitColors array
+//Add all the fruit vars into the fruitColors array
 fruitColors.push(cherry);
 fruitColors.push(banana);
 fruitColors.push(orange);
@@ -270,18 +270,18 @@ console.log(fruitColors);
     </code>
 </pre>
                 <div class="point">
-                    Now lets attempt to pull out the color's only for each of the three fruits in our <code>fruitColors</code>
+                    Now let's attempt to pull out only the colors for each of the three fruits in our <code>fruitColors</code>
                     array.
 
                     <div class="excercise">
-                        Try it: create a snippet that will create an array to hold multiple arrays (defined above).
+                        Try it: Create a snippet that will create an array to hold multiple arrays (defined above).
                         Then write three console logs that log <strong>only</strong> the colors of the fruits.
                     </div>
                 </div>
 
 <pre>
     <code class="language-javascript">
-//we can access our array's based on index
+//We can access our arrays based on index
 console.log(fruitColors[0][1]);
 console.log(fruitColors[1][1]);
 console.log(fruitColors[2][1]);
@@ -289,17 +289,17 @@ console.log(fruitColors[2][1]);
 </pre>
 
                 <h3>
-                    Removing items from an array
+                    Removing Items From an Array
                 </h3>
 
                 <div class="point">
-                    So now we can create Arrays, access array properties, and add items to arrays, how about removing
+                    Now we can create arrays, access array properties, and add items to arrays. How about removing
                     items?
                 </div>
 
                 <div class="point">
                     Items can be removed one at a time <strong>from the end</strong> of the array, using the <code>pop</code>
-                    function. NOTE: This modifies the original array
+                    function. NOTE: This modifies the original array.
                 </div>
 
 <pre>
@@ -338,13 +338,13 @@ console.log(fruits);
     <code class="language-javascript">
 var fruits = ["apple", "cherry", "plum", "apricot"];
 console.log(fruits.slice(1, 3));
-console.log(fruits); //note, it's the same as the original array.
+console.log(fruits); //Note: it's the same as the original array.
     </code>
 </pre>
 
                 <div class="point">
-                    One point to remember about the <code>slice</code> functions is that is <strong>does not</strong>
-                    modify the original array.  But what if we actually did want to modify the original?
+                    One point to remember about the <code>slice</code> function is that it <strong>does not</strong>
+                    modify the original array.  But what if we did want to modify the original?
                 </div>
 
                 <div class="point">
@@ -396,7 +396,7 @@ console.log(fruits);
 </pre>
 
                 <div class="point">
-                    We can do a lot more with array's, just look at all it's available functions
+                    We can do a lot more with arrays; just look at all its available functions
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
                        target="_blank">on the MDN</a>.
                 </div>
@@ -413,17 +413,17 @@ console.log(fruits);
             Create a program that will:
 
             <ul class="list">
-                <li>Create a simple array with 5 movie titles as strings.</li>
-                <li>Console log the whole array.</li>
-                <li>Alert the second value in the array.</li>
-                <li>Prompt for a "String" and add it to the array.</li>
-                <li>Alert a random string in the array.</li>
+                <li>Create a simple array with 5 movie titles as strings</li>
+                <li>Console log the whole array</li>
+                <li>Alert the second value in the array</li>
+                <li>Prompt for a "String" and add it to the array</li>
+                <li>Alert a random string in the array</li>
             </ul>
             If you are feeling ambitious try this...
             
             <ul class="list">
-                <li>Create an HTML for the above javascript file.</li>
-                <li>Make the random string appear on the screen in a "p" tag, after the alert.</li>
+                <li>Create an HTML page for the above Javascript file</li>
+                <li>Make the random string appear on the screen in a "p" tag after the alert</li>
             </ul>
         </div>
     </div>
